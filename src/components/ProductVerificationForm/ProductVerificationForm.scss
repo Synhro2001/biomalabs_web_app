@@ -1,0 +1,184 @@
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verification-form-box{
+
+    border: 3px solid black;
+    box-shadow: 0 6px 20px rgba(25, 40, 69, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 1.2rem;
+    overflow: hidden;
+    width: 800px;
+    margin-bottom: 60px;
+
+}
+
+.verification-form .form-group--verification:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100px;
+}
+
+.input-label {
+    border-right: 1px solid black;
+    width: 19rem;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.input-wrap label {
+    transition: all 0.3s ease;
+}
+
+label {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.verification-form .form-group--verification:first-child .form-control::placeholder {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .235em;
+}
+
+.verification-form .form-group--verification:nth-child(2) .form-control::placeholder {
+    font-size: 1.5rem;
+    letter-spacing: .235em;
+}
+
+.verification-form .form-group--verification:nth-child(3) .form-control::placeholder {
+    font-size: 2rem;
+    letter-spacing: .235em;
+}
+
+
+
+.verification-form .form-group--verification .form-control{
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1em;
+    color: white;
+    padding: 13px;
+    outline: none;
+}
+
+.form-control{
+    font-size: 25px;
+    transition: all 0.3s ease;
+    background-color:  transparent;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+}
+
+input {
+    overflow: visible;
+}
+
+.btn-verification {
+    background: var(--gradient-bar);
+    padding: 8px 20px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source:var(--gradient-bar);
+    outline: none;
+
+ 
+    cursor: pointer;
+}
+
+.btn-verification--large {
+    padding: 16px 32px;
+    font-size: 25px;
+    color: black;
+}
+
+@media screen and (max-width: 960px) {
+    .verification-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .verification-form-box{
+        height: 255px;
+        width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .verification-form .form-group--verification .input-wrap {
+        padding: 0.7rem;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .input-label {
+        font-size: 1rem;
+        line-height: 1em;  
+    }
+
+    .verification-form .form-group--verification:first-child .form-control::placeholder {
+        font-size: 0.8rem;
+        letter-spacing: .500em;
+    }
+    
+    .verification-form .form-group--verification:nth-child(2) .form-control::placeholder {
+        font-size: 0.8rem;
+        letter-spacing: .500em;
+    }
+    
+    .verification-form .form-group--verification:nth-child(3) .form-control::placeholder {
+        font-size: 0.8rem;
+        letter-spacing: .500em;
+    }
+
+    .form-control{
+        font-size: 15px;
+        transition: all 0.3s ease;
+        background-color:  rgba(0,0,0,0.2);
+    }
+
+    .btn-verification--large {
+        padding: 18px 30px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .input-wrap {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .verification-form-box{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn-verification--large {
+        padding: 10px 24px;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}

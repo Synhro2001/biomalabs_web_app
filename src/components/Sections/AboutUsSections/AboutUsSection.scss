@@ -1,0 +1,105 @@
+.biomalabs__about-us{
+    display: flex;   
+    flex-direction: row;
+}
+
+.biomalabs__about-us__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+
+.biomalabs__about-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.biomalabs__about-us-image img {
+    width: 100%;
+    height: 100%; 
+
+}
+
+.biomalabs__about-us__content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.biomalabs__about-us__content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.biomalabs__about-us__nav{
+    display: flex;
+    font-family: var(--font-family);
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1290px) {
+    .biomalabs__about-us-image img {
+        height: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .biomalabs__about-us {
+        flex-direction: column;
+    }
+
+    .biomalabs__about-us__content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .biomalabs__about-us h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .biomalabs__about-us p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+ 
+@media screen and (max-width: 576px) { 
+    .biomalabs__about-us__nav{
+        flex-direction: column;
+        margin-top: 0px;
+        font-size: 20px;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    .about-us-nav li {
+        padding: 0;
+        height: 50px;
+    }
+}
+
+

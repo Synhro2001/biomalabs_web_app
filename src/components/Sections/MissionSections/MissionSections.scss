@@ -1,0 +1,206 @@
+.mission .landing-video:not(:last-child) {
+    margin-bottom: 4.7rem;
+}
+
+.landing-video {
+    height: 75%;
+    width: 75%;
+    margin-left: 13%;
+    position: relative;
+    border-radius: 4.8rem;
+    overflow: hidden;
+    
+}
+
+.landing-video-article{
+    position: absolute;
+    z-index: 2;
+    bottom: 5.3rem;
+    left: 5.6rem;
+    padding: 3.4rem 4.7rem 4rem;
+    background-color: rgb(46, 0, 83, 0.8);
+    color:#fff;
+    font-size: 20px;
+    font-family: var(--font-family);
+    border-radius: 2.4rem 0px 2.4rem 2.4rem;
+    max-width: 48rem;
+}
+
+.landing-video-content::after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    opacity: 0;
+    padding-bottom: 39%;
+  
+}
+
+.landing-video-content video {
+    position: absolute !important;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+
+.biomalabs__mission {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+}
+
+.biomalabs__mission-feature {
+    display: flex;
+}
+
+.biomalabs__mission-feature .biomalabs__mission-feature-container__feature {
+    margin: 0;
+}
+
+.biomalabs__mission-feature .biomalabs__mission-feature-container__feature-text {
+    max-width: 700px;
+}
+
+.biomalabs__mission-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+
+.biomalabs__mission-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+    font-family: var(--font-family);
+}
+
+.biomalabs__mission-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.biomalabs__mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    margin-top: 2rem;
+}
+
+.biomalabs__mission-container .biomalabs__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.biomalabs__mission-container .biomalabs__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+@media screen and (max-width: 1100px) {
+    .landing-video video {
+        position: static !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        object-fit: cover;
+        
+    }
+    .landing-video:not(:last-child){
+        margin-bottom: 4.1rem;
+    }
+    .landing-video{
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction:normal;
+
+    }
+    .landing-video-article{
+        display: flex;
+        position: static !important;
+        -webkit-box-ordinal-group: 3;
+        order: 2;
+        padding: 1.6rem 2.4rem 2.7rem;
+        border-radius: 1.8rem 0px 1.8rem 1.8rem;
+    }
+    
+    .landing-video-article p {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    .landing-video-content{
+        min-height: 124px;
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        margin-bottom: 24px;
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        
+    }
+
+    .landing-video-content::after{
+        content: "";
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+        padding-bottom: 0%;
+        
+    }
+        
+}
+
+@media screen and (max-width: 850px) {
+    .biomalabs__mission-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .biomalabs__mission-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .biomalabs__mission-feature .biomalabs__features-container__feature {
+        flex-direction: column;
+    }
+
+    .biomalabs__mission-feature .biomalabs__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .biomalabs__mission-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .biomalabs__mission-container .biomalabs__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,210 @@
+.biomalabs__about-us-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.biomalabs__about-us-product__content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.biomalabs__about-us-product ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 10%;
+}
+
+.biomalabs__about-us-product__content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+}
+
+.biomalabs__about-us-product__content p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.experience-statistic {
+    display: flex;
+    text-align: center;
+
+}
+
+span {
+    padding: 20px;
+    margin-left: -20px;
+}
+
+.experience-statistic-item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    flex-shrink: 0;
+
+}
+
+.experience-statistic-item-num {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 40px;
+    margin-bottom: 2px;
+}
+
+.experience-statistic-item-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;
+    color: var(--color-text);
+    color: #fff;
+}
+
+.biomalabs__about-us-product__group{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.biomalabs__about-us-product__groupB {
+    display: flex;   
+    flex-direction: row;
+}
+.biomalabs__about-us-product__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.biomalabs__about-us-product__img img {
+    width: 70%;
+    height: 100%; 
+}
+
+@media screen and (max-width: 1200px) { 
+    .biomalabs__about-us-product {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+    }
+
+    .biomalabs__about-us-product ul {
+        padding-left: 0px;
+        padding-right: 0px;
+        list-style: none;
+        margin: 0;
+    }
+    .experience-statistic-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 50%;
+        flex-shrink: 0;
+       
+    }
+
+    .experience-statistic-item-num {
+        font-size: 4rem;
+        line-height: 1.25em;
+        margin-bottom: 0px;
+    }
+    
+    .experience-statistic-item-text {
+        font-size: 1.5rem;
+        line-height: 1.25em;
+  
+    }
+    .experience-statistic {
+        flex-wrap: wrap;
+        margin-bottom: 5.9rem;
+        text-align: left;
+    }
+    .experience-statistic-item:nth-child(2n) {
+        padding-left: 2.8rem;
+        border-left: 1px solid rgba(184,184,184, 0.2);
+    }
+    .experience-statistic-item:nth-child(n+3) {
+    
+        padding-bottom: 0;
+        border-top: 1px solid rgba(184,184,184, 0.2);
+    }
+    .biomalabs__about-us-product__img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .biomalabs__about-us-product__content  {
+        margin: 0 0 3rem;
+    }
+
+    .biomalabs__about-us-product__groupB {
+
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .biomalabs__about-us-product__content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    .biomalabs__about-us-product__content p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .experience-statistic-item-num {
+        font-size: 70px;
+        line-height: 48px;
+    }
+    
+    .experience-statistic-item-text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+ 
+@media screen and (max-width: 490px) {
+    .biomalabs__about-us-product__content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    .biomalabs__about-us-product__content p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .experience-statistic-item-num {
+        font-size: 70px;
+        line-height: 48px;
+    }
+    
+    .experience-statistic-item-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+ 

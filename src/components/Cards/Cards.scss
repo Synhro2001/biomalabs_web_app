@@ -1,0 +1,64 @@
+.biomalabs__cards {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.biomalabs__cards-heading {
+  width: 100%;
+  text-align: left;
+
+  margin-bottom: 5rem ;
+
+}
+
+.biomalabs__cards-heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+
+}
+
+.biomalabs_cards-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.biomalabs__cards-container_group {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+  .biomalabs__cards-container {
+      flex-direction: column-reverse;
+  }
+
+  .biomalabs__cards-container_group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .biomalabs__cards-container_group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .biomalabs__cards-heading h1 {
+      font-size: 46px;
+      line-height: 52px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .biomalabs__cards-heading h1 {
+      font-size: 34px;
+      line-height: 42px;
+  }
+  
+}

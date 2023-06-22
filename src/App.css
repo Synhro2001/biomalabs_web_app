@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg {
+  background:-moz-radial-gradient(circle at 3% 25%, rgb(46, 0, 83) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%,rgb(46, 0, 83) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgb(46, 0, 83) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgb(46, 0, 83) 0%, rgba(4, 12, 24, 1) 25%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgb(46, 0, 83) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+.gradient__container__bg {
+  background:-moz-radial-gradient(circle at 30% -100%, #250454 25%, rgb(46, 0, 83) 85%, rgb(147, 27, 222) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 30% -100%, #250454 25%, rgb(46, 0, 83) 85%, rgb(147, 27, 222) 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 30% -100%, #250454 25%, rgb(46, 0, 83) 85%, rgb(147, 27, 222) 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 30% -100%, #250454 25%, rgb(46, 0, 83) 85%, rgb(147, 27, 222) 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 30% -100%, #250454 25%, rgb(46, 0, 83) 85%, rgb(147, 27, 222) 100%);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;    
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.rotate-center {
+-webkit-animation: rotate-center 0.6s ease-in-out both;
+        animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+      padding: 4rem;
+  }
+
+  .section__margin {
+      margin: 4rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 560px) {
+  .section__padding {
+      padding: 4rem 2rem;
+  }
+
+  .section__margin {
+      margin: 4rem 2rem;
+  }
+  
+}
